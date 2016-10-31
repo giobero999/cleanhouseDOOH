@@ -29,14 +29,6 @@ $(document).ready(function() {
         itemsDesktopSmall: [979, 1]
     });
 
-    // typed.js
-    $(function() {
-        $("#typed").typed({
-            strings: ["pixelart"],
-            typeSpeed: 300,
-        });
-    });
-
     // active buttons
     $('.feature-btns button').on('click', function() {
         $('.feature-btns button').removeClass('active-btn');

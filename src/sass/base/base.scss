@@ -1,7 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans:300,400';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400');
 /* @include font-face("alk-sanet", "fonts/alk-sanet/alk-sanet-webfont"); */
 @include font-face("bpg-algeti", "fonts/bpg-algeti/bpg-algeti-webfont");
 @include font-face("bpg-banner", "fonts/bpg-banner-caps/bpg-banner-caps-webfont");
+@include font-face("bpg-glaho", "fonts/bpg-glaho-web-caps/bpg-glaho-web-caps-webfont");
 
 body {
   height: 100%;
