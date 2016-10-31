@@ -1,0 +1,15 @@
+@include respond-to (mediumScreen2) {
+	#scrollDown, #scrollUp {
+		display: none;
+	}
+}
+
+@include respond-to (mediumScreen) {
+	#scrollDown, #scrollUp {
+		display: none;
+	}
+}
+
+@include respond-to (mediumScreen) {
+	
+}

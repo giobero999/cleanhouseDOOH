@@ -1,0 +1,39 @@
+{
+  "name": "tt_parallax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giobero999/tt_parallax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giobero999/tt_parallax/issues"
+  },
+  "homepage": "https://github.com/giobero999/tt_parallax#readme",
+  "devDependencies": {
+    "bower": "^1.5.2",
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-connect-php": "0.0.8",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-html": "^0.4.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-rev-append": "^0.1.6",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "install": "^0.4.1",
+    "npm": "^3.5.2"
+  },
+  "dependencies": {
+    "bower": "^1.7.1"
+  }
+}

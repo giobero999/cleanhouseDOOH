@@ -1,0 +1,31 @@
+/*media queries*/
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+
+@mixin respond-to($media) {
+  // @if $media == XLargeScreen{
+  //   @media only screen and (min-width: $break-5kScreen - 1) { @content; }
+  // }
+
+  @if $media == smallScreen {
+    @media only screen and (max-width: $break-small - 1) { @content; }
+  }
+
+  @else if $media == mediumScreen {
+    @media only screen and (max-width: $break-medium - 1) { @content; }
+  }
+
+  @else if $media == mediumScreen2 {
+    @media only screen and (min-width: $break-medium - 1) and (max-width: $break-large - 1) { @content; }
+  }
+
+  @else if $media == largeScreen {
+    @media only screen and (max-width: $break-large - 1) { @content; }
+  }
+
+  @else if $media == XlargeScreen {
+      @media only screen and (min-width: $break-large ) { @content; }
+  }
+}

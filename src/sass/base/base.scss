@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans:300,400';
+/* @include font-face("alk-sanet", "fonts/alk-sanet/alk-sanet-webfont"); */
+@include font-face("bpg-algeti", "fonts/bpg-algeti/bpg-algeti-webfont");
+@include font-face("bpg-banner", "fonts/bpg-banner-caps/bpg-banner-caps-webfont");
+
+body {
+  height: 100%;
+  background: $white;
+  font-family: $mainFont;
+  font-weight: 300;
+  color: $blackColor;
+}
+
+
+
+p {
+  font-family: $secondaryFont;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $mainFont;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+
+
+*:focus {
+  outline: none !important;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+}
+
+.content {
+  position: relative;
+}
