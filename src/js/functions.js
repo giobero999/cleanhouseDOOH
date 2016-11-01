@@ -5,6 +5,21 @@ $(document).ready(function() {
         topSpacing: 0
     });
 
+    $('.more').on('click', function() {
+      var $arrow = $(this).find('.arrows');
+      $('.arrows').not($arrow).stop().addClass("fa-angle-down");
+      $arrow.stop().toggleClass("fa-angle-down");
+    });
+
+    $('#accordion').on('shown.bs.collapse', function (e) {
+        var offset = $(this).find('.collapse.in');
+        if(offset) {
+            $('html,body').animate({
+                scrollTop: $(offset).offset().top -290
+            }, 500);
+        }
+    });
+
     // dropdown menu
     $('ul.nav li.dropdown').hover(function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);

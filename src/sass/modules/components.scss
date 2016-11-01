@@ -46,43 +46,6 @@
   }
 }
 
-
-
-/* code for animated blinking cursor */
-.typed-cursor{
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-ms-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-o-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
 .pt80 {
   padding-top: 80px !important;
 }
@@ -130,14 +93,6 @@
 .white-bg {
   background: $white;
   //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.mask {
-  @include position(absolute, 0 0 0 0);
-  background: $black url('../imgs/patterns/cubes.png') repeat;
-  width: 100%;
-  height: 100%;
-  opacity: .6;
 }
 
 .active-btn {
@@ -254,6 +209,10 @@
   }
 }
 
+.title {
+  color: $white
+}
+
 
 
 
@@ -287,7 +246,7 @@
 
 
 /* ========START FOOTER STYLES======= */
-#footer {
+#contact {
   width:100%;
   .title {
     color: $white;
@@ -308,14 +267,14 @@
     border-radius: 3px 0 0 0px;
   }
   .send-button {
-    background: $red;
+    background: $iconColor;
     border: none;
     color: $white;
     padding: 0 20px;
     border-radius: 0 0 3px 0px;
     font-size: 20px;
     &:hover {
-      background: darken($red, 4%);
+      background: darken($iconColor, 4%);
     }
     i {
       @include transform(rotate(0deg));
@@ -365,9 +324,9 @@
 
   }
   .subscribe {
-    color: $grayColor;
+    color: $white;
     p {
-      color: darken($grayColor, 15%);
+      color: $white;
       font-size: 12px;
       opacity: .7;
     }
@@ -375,15 +334,15 @@
   .contact-header {
     text-align: right;
     margin-bottom: 20px;
-    color: $grayColor;
+    color: $white;
   }
   .addresses {
-    color: $grayColor;
+    color: $white;
   }
   .copyright {
     margin-top: 40px;
     font-size: 12px;
-    color: $grayColor;
+    color: $white;
   }
 }
 /* ========END FOOTER STYLES======= */
@@ -407,13 +366,7 @@
 
 
 .list-group-item {
-  border-color: transparent;
-  &:first-child {
-    border-radius: 0 0 0 0;
-  }
-  &:last-child {
-    border-radius: 0 0 0 0;
-  }
+  
 }
 
 @media (max-width: 992px) {
