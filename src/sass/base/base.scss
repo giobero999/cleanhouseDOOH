@@ -10,7 +10,7 @@ body {
   background: $white;
   font-family: $mainFont;
   font-weight: 300;
-  color: $blackColor;
+  color: $bgDarken;
 }
 
 
@@ -18,10 +18,12 @@ body {
 p {
   font-family: $secondaryFont;
   font-size: 16px;
+  letter-spacing: .4px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $mainFont;
+  letter-spacing: .4px;
 }
 
 h1 {
