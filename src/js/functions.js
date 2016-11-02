@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    /*preloader*/
+    $(window).load(function() {
+      setTimeout(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 2e3), $("#status").fadeOut(), $("#preloader").delay(350).fadeOut("slow")
+      }, 2e3)
+    });
+
     // sticked menu
     $("#sticker").sticky({
         topSpacing: 0
