@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Clean House DOOH</title>
+  <link rel="icon" type="image/png" href="imgs/hc-logo.png" />
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
@@ -21,42 +23,53 @@
               <i class="fa fa-bars menu-bars"></i>
             </button>
             <a class="navbar-brand" href="index.php">
-              <!-- <img src="imgs/logo.svg"  alt=""> -->
+              <img src="imgs/hc-logo.png"  alt="Clean House" width="48">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">მთავარი</a></li>
-              <li><a href="#services">უპირატესობები</a></li>
-              <li><a href="#projects">არხები</a></li>
-              <li><a href="#offers">რატომ უნდა იაქტიურო</a></li>
-              <li><a href="">კრეატიული სახელმძღვანელო</a></li>
-              <li><a href="">მონიტორინგი</a></li>
-              <li><a href="#contact">კონტაქტი</a></li>
+              <li><a href="#home" key="home" class="tr">home</a></li>
+              <li><a href="#services" key="services" class="tr">Benefits</a></li>
+              <li><a href="#projects" key="projects" class="tr">Channels</a></li>
+              <li><a href="#offers" key="offers" class="tr">Why Clean House?</a></li>
+              <!-- <li><a href="#" key="creative" class="tr">Creative guideline</a></li> -->
+              <li><a href="http://taxitube.ge:9002/" target="blank" key="monitoring" class="tr">monitoring</a></li>
+              <li><a href="#contact" key="contact" class="tr">Contact</a></li>
+              <li>
+                <div class="lang_switcher">
+                  <div id="ge" class="">
+                    <a href="index-ge.html">
+                      <img src="imgs/flags/ge.png" alt="" width="20">
+                    </a>
+                  </div>
+                  <div id="en" class="">
+                    <a href="#">
+                      <img src="imgs/flags/en.png" alt="" width="20">
+                    </a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
     </header>
     <section id="home">
-      <div class="visible-sm hidden-md- hidden-lg">
+      <div class="visible-xs visible-sm hidden-md hidden-lg">
         <div class="slider-img">
           <img src="imgs/mobile.jpg" alt="" class="img-responsive">
-        </div>
-        <div class="main-text hidden-xs hidden-sm">
-          <h1 class="animated wow fadeIn">სუფთა სახლის ინტეგრირებული მარკეტინგული არხი</h1>
-          <h2 class="animated wow fadeIn" data-wow-delay=".3s">მიზნობრივი მესიჯი დროსა და სივრცეში</h2>
         </div>
       </div>
       <div class="parallax hidden-xs hidden-sm">
         <!-- <div class="layer bag"></div> -->
         <div class="layer slider">
           <div class="main-text hidden-xs">
-            <h1 class="animated wow fadeIn">სუფთა სახლის <br> ინტეგრირებული მარკეტინგული არხი</h1>
-            <h2 class="animated wow fadeIn" data-wow-delay=".3s">მიზნობრივი მესიჯი დროსა და სივრცეში</h2>
+            <h1 class="animated wow fadeIn">Clean House<br> Integrated Marketing Channel</h1>
+            <h2 class="animated wow fadeIn" data-wow-delay=".3s">Deliver a right message at the right time to the right audience</h2>
           </div>
           <div class="layer car2"></div>
           <div class="layer car1"></div>
+          <div class="layer ad"></div>
         </div>
       </div>
     </section>
@@ -66,46 +79,46 @@
           <div class="row">
             <div class="col-sm-12">
               <h2 class="text-center">
-                უპირატესობები
+                Benefits
               </h2>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6 col-md-4">
-              <div class="text-center animated fadeIn wow">
+              <div class="text-center animated fadeIn wow" >
                 <h3>
-                  <img src="imgs/icons/target.svg"  alt="">
+                  <img src="imgs/icons/effective.svg"  alt="">
                 </h3>
-                <h4>ტარგეტირებადი</h4>
-                <p>ზუსტად მიაწოდე ინფორმაცია სამიზნე აუდიტორიას</p>
+                <h4>Effective</h4>
+                <p>Significantly increase your brand awareness, product purchase intent and sales.</p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="text-center animated fadeIn wow" data-wow-delay=".3s">
-                <h3 >
+                <h3>
                   <img src="imgs/icons/eye.svg"  alt="">
                 </h3>
-                <h4>მიმზიდველობა</h4>
-                <p>გაზარდე ბრენდის ცნობადობა მკვეთრი ფერებით</p>
+                <h4>Engaging</h4>
+                <p>Enrich your brand with vivid colours and captivating ads</p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="text-center animated fadeIn wow" data-wow-delay=".6s">
                 <h3>
-                  <img src="imgs/icons/effective.svg"  alt="">
+                  <img src="imgs/icons/target.svg"  alt="">
                 </h3>
-                <h4>ეფექტურობა</h4>
-                <p>გაზარდე მომხმარებლის ლოიალურობა და  გაყიდვები</p>
+                <h4>Targeted Reach</h4>
+                <p>Reach your target audience on a location and time basis</p>
               </div>
             </div>
-
+            <div class="clearfix hidden-sm hidden-xs"></div>
             <div class="col-sm-6 col-md-4">
               <div class="text-center animated fadeIn wow" data-wow-delay=".9s">
                 <h3 >
                   <img src="imgs/icons/layers.svg"  alt="">
                 </h3>
-                <h4>რელევანტურობა</h4>
-                <p>დაეხმარე  მომხმარებელს, ყიდვის მომენტში, გადაწყეტილების მიღებაში</p>
+                <h4>Relevant</h4>
+                <p>Contextually relevant ads, enhancing brand reinforcement, recall, and repeat purchase</p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
@@ -113,8 +126,8 @@
                 <h3 >
                   <img src="imgs/icons/move.svg"  alt="">
                 </h3>
-                <h4>მოქნილობა</h4>
-                <p>მართე ინტეგრირებილი სარეკლმაო კამპანია ცენტრალიზებულად: ინფორმაციის სწრაფი, მარტივი და დროული გავრცელება</p>
+                <h4>Flexible</h4>
+                <p>Customise, modify and execute campaigns in real time to meet shifting market demands and opportunities</p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
@@ -122,8 +135,8 @@
                 <h3 >
                   <img src="imgs/icons/percentage.svg"  alt="">
                 </h3>
-                <h4>მაღალი ROI</h4>
-                <p>მიიღე მაღალი ამონაგები დაბალი მარკეტინგული დანახარჯით</p>
+                <h4>High ROI</h4>
+                <p>Advertise at a low CPM cost throughout high traffic networks</p>
               </div>
             </div>
           </div>
@@ -134,7 +147,7 @@
           <div class="row pb20">
             <div class="col-sm-12">
               <h2 class="text-center">
-                არხები
+                Channels
               </h2>
             </div>
           </div>
@@ -145,12 +158,14 @@
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 <div class="item animated wow fadeIn" data-wow-delay=".2s">
                   <img src="imgs/project-1.jpg" alt="" class="img-responsive">
-                  <h4>DOOH ქსელი</h4>
+                  <h4>DOOH Network
+                    <p><i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i></p>
+                  </h4>
                   <div class="more">
                     <p>Click for More</p>
-                    <p>
+                    <!-- <p>
                       <i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i>
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </a>
@@ -159,12 +174,11 @@
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                 <div class="item animated wow fadeIn" data-wow-delay=".4s">
                   <img src="imgs/project-2.jpg" alt="" class="img-responsive">
-                  <h4>მოძრავი <span class="english">LED</span> ეკრანები</h4>
+                  <h4>TaxiTube
+                    <p><i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i></p>
+                  </h4>
                   <div class="more">
                     <p>Click for More</p>
-                    <p>
-                      <i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i>
-                    </p>
                   </div>
                 </div>
               </a>
@@ -173,12 +187,11 @@
               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTree">
                 <div class="item animated wow fadeIn" data-wow-delay=".6s">
                   <img src="imgs/project-3.jpg" alt="" class="img-responsive">
-                  <h4 class="english-font">Homecard App</h4>
+                  <h4 class="english-font">Homecard App
+                    <p><i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i></p>
+                  </h4>
                   <div class="more">
                     <p>Click for More</p>
-                    <p>
-                      <i class="arrows fa fa-angle-down fa-angle-up fa-2x"></i>
-                    </p>
                   </div>
                 </div>
               </a>
@@ -198,29 +211,28 @@
                         <div class="row project-1">
                           <div class="col-sm-5">
                             <div class="app-img">
-                              <img src="imgs/project-11.png" alt="" class="img-responsive center-block">
+                              <img src="imgs/dooh.png" alt="" class="img-responsive center-block">
                             </div>
                           </div>
                           <div class="col-sm-7">
                             <div class="app-desk">
-                              <h4>ციფრული ეკრანების ქსელი</h4>
-                              <p>ჩვენი ციფრული ეკრანების ქსელით თქვენ შეძლებთ დაგეგმოთ ინოვეციური,
-                                მაშტაბური, და ანიმრებული მარკეტინგული კამპანიები  და მიიქციოთ თქვენი
-                                მომხმარებლის ყურადღება.
-                              </p>
-                              <p>ეკრანებს აქვს მაღალი სიკაშკაშის პრემიუმ გამოსახულება, რომელიც თქვენს გზავნილს გახდის უფრო ეფექტურს.</p>
+                              <h4>DOOH Network</h4>
+                              <p>With our DOOH network you will be able to create innovative, dynamic, and large scale marketing campaigns. Our high brightness screens have natural colours and premium display quality that further enhances your message:
                               <ul class="list-group dooh-list">
                                 <li>
-                                  <p><i >მაქსიმალური სიკაშკაშე:</i> 3,500 nits</p>
+                                  <p>Maximum brightness: 3,500 nits</p>
                                 </li>
                                 <li>
-                                  <p><i>ზომა:</i> 55 ინჩი</p>
+                                  <p>Size: 55"</p>
                                 </li>
                                 <li>
-                                  <p><i>ბუნერივი ფერების კალიბრაცია:</i> D65</p>
+                                  <p>Resolution: HD</p>
                                 </li>
                                 <li>
-                                  <p><i>ორიენტაცია:</i> პორტრეტი</p>
+                                  <p>Calibration: natural color temperature D65</p>
+                                </li>
+                                <li>
+                                  <p>Orientation: Portrait</p>
                                 </li>
                               </ul>
                             </div>
@@ -235,53 +247,55 @@
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="app-header">
-                              <h3 class="text-center">მოძრავი LED ეკრანების ქსელი</h3>
+                              <h3 class="text-center">TaxiTube</h3>
                             </div>
                           </div>
-                          <div class="col-sm-10 col-sm-offset-1">
-                            <div class="app-desk mb20">
-                              <p class="text-center">მოხმარებლის ოპტიმალური აღქმადობა მაქსიმალურია, როდესაც ისინი მოძრაობაში არიან და ეძებენ ინფორმაციას. ამ ფონზე, გარე რეკლამის იმგვარი ციფრული მედია ტექნოლოგია, როგორიც ჩვენი LED ეკრანბის ქსელი წარმოადგენს მიმზიდველ ალტერნატივას, რომელიც:
+                          <div class="col-md-10 col-md-offset-1">
+                            <div class="app-desk">
+                              <p class="text-center">Our Taxi Top LED network combines DOOH with mobile digital media. It tailors to the specific environment and creates a sense of immediacy and responds to the moment that consumer is in.
                               </p>
                             </div>
-                            <div class="col-sm-6 col-sm-offset-3">
+                            <div class="col-md-6 col-md-offset-3">
                               <div class="app-img">
                                 <img src="imgs/taxi.png" alt="" class="img-responsive">
                               </div>
                             </div>
                           </div>
-                          <div class="row mt40">
-                            <div class="col-sm-8 col-sm-offset-2">
-                              <div class="">
-                                <div class="app-desk">
-                                  <p class="text-center">
-                                    ფეხდაფეხ მიჰყევი თქვენი სარეკლამო კამპანიის განვითარებას ქალაქის ისეთ უბნებში სადაც გარე რეკლამა ჯერ არასდროს გასულა.  თქვენი შეგიძლიათ იმაუწყებლოთ
-                                  </p>
-                                </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="">
+                              <div class="app-desk">
+                                <p class="text-center">
+                                  It's luminous during the day as it is during the night and allows you to broadcast multi-layered brand stories and messages to targeted audiences:
+                                </p>
                               </div>
                             </div>
-                            <div class="col-md-4">
-                              <div class="led-monitors">
-                                <div class="first-col">
-                                  <img src="imgs/icons/bus-stop.svg"  alt="" class="center-block" width="30px">
-                                </div>
-                                <p class="text-center">მოსაცდელი ადგილები: <br> ავტობუსის გაჩერებები, საცობები, სავაჭრო ცენტრები</p>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4">
+                            <div class="led-monitors">
+                              <div class="first-col">
+                                <img src="imgs/icons/bus-stop.svg"  alt="" class="center-block" width="30px">
                               </div>
+                              <p class="text-center">High dwell time: <br>Bus stops, traffic jams, airports, shopping centres</p>
                             </div>
-                            <div class="col-md-4">
-                              <div class="led-monitors">
-                                <div class="first-col">
-                                  <img src="imgs/icons/bank-building.svg"  alt="" class="center-block" width="30px">
-                                </div>
-                                <p class="text-center">300-ზე მეტი კორპორატიული კლიენტების თანამშრომლებისთვის <br>(საქართველოს ბანკი, TBC, Wendy’s)</p>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="led-monitors">
+                              <div class="first-col">
+                                <img src="imgs/icons/bank-building.svg"  alt="" class="center-block" width="30px">
                               </div>
+                              <p class="text-center"><br>300 corporate client employees (Bank of Georgia,TBC, Wendy’s...)</p>
                             </div>
-                            <div class="col-md-4">
-                              <div class="led-monitors">
-                                <div class="first-col">
-                                  <img src="imgs/icons/building.svg"  alt="" class="center-block" width="30px">
-                                </div>
-                                <p class="text-center"><br>ქალაქის ისეთ უბნებში სადაც გარე რეკლამა ჯერ არასდროს გასულა</p>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="led-monitors">
+                              <div class="first-col">
+                                <img src="imgs/icons/building.svg"  alt="" class="center-block" width="30px">
                               </div>
+                              <p class="text-center"><br>Hard to reach locations with no outdoor advertising infrastructure</p>
                             </div>
                           </div>
                         </div>
@@ -303,18 +317,18 @@
                               <h3>Homecard App</h3>
                             </div>
                             <div class="app-desk">
-                              <p>დაგროვების ბარათის მობილური აპლიკაციის მეშვეობით შეგიძიათ იყოთ კიდევ უფრო ახლოს მომხმარებელთან და ნებისმიერ დროს მიაწოდოთ მათ თქვენი სააქციო შეთავაზებები: სქესის, წლოვანების, თუ სხვა ინდიკატორების მიხედვით:
+                              <p>With our loyalty card app you can give your campaign a new dimension. The app has an increasing user base and will allow you to:
                               </p>
                               <ul class="list-group">
                                 <li>
-                                  <p>ნოტიფიკაციების კამპანიების დაგეგმვა და გაგზავნა</p>
+                                  <p>Manage notification campaigns and send target messages by location, age and sex</p>
                                 </li>
                                 <li>
-                                  <p>In-app რეკლამების განთავსება</p>
+                                  <p>Personalise ads for your consumers on our window shop screens, using Beacon system</p>
                                 </li>
                                 <li>
                                   <p>
-                                    ეკრანზე პერსონალიზრებული რეკლამის გაშვება  მაღაზიაში შესვლის დროს Beacon ტექნოლოგიის მეშვეობით
+                                    Create In-app advertising: (coming soon)
                                   </p>
                                 </li>
                               </ul>
@@ -344,52 +358,49 @@
           <div class="row pb20 mt20">
             <div class="col-sm-12">
               <h2 class="text-center">
-                რატომ უნდა იაქტიურო?
+                Why Clean House?
               </h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6">
+          <div class="row proactive">
+            <div class="col-md-6">
               <div class="row">
-                <div class="col-sm-1">
-                  <i class="fa fa-check fa-2x icon"></i>
-                </div>
-                <div class="col-sm-11">
-                    <p>კომუნიკაციის მსგავსი ფორმა  იზიდავს თვალს და სწრაფად ახდენს მომხმარებელზე შთაბეჭდილებას</p>
+                <div class="col-sm-12">
+                  <ul class="why-list">
+                    <li><p>Opportunity to deliver your offer to 500,000 unique customers per day</p></li>
+                    <li><p class="integration">Full marketing cycle integration with social media
+                      <a href="https://www.facebook.com/suftasakhli/?fref=ts" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                      </a>
+                      <a href="http://www.cleanhouse.ge" target="_blank">
+                        <i class="fa fa-globe"></i>
+                      </a>
+                    </p></li>
+                    <li><p>High Georgia coverage at low cost</p></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 mb40">
+            <div class="col-md-6">
               <div class="row">
-                <div class="col-sm-1">
-                  <i class="fa fa-check fa-2x icon"></i>
-                </div>
-                <div class="col-sm-11">
-                  <p>გეძლევათ შესაძლებლობა თქვენი შეთავაზება მიაწოდოთ ყოველდღიურად 500 000-მდე მომხმარებელს</p>
+                <div class="col-md-8  col-md-offset-2">
+                  <div>
+                    <img src="imgs/diagram-en.png" class="img-responsive center-block" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mb40">
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-1">
-                  <i class="fa fa-check fa-2x icon"></i>
-                </div>
-                <div class="col-sm-11">
-                  <p>შესაძლებლობა ჩაანაცვლოთ  OOH-ის  ტრადიციული სტატიკური  სახე ანიმირებული  რეკლამით</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-1">
-                  <i class="fa fa-check fa-2x icon"></i>
-                </div>
-                <div class="col-sm-11">
-                  <p>შესაძლებლობა მცირედი დანახარჯით მოიცვათ საქართველოს მოსახლეობის უდიდესი ნაწილი.</p>
-                </div>
-              </div>
+          <div class="row mb40 mt40">
+            <div class="col-sm-4 col-sm-offset-4">
+              <p class="text-center">Download our offer presentation<br>
+                <i class="fa fa-chevron-down"></i>
+              </p>
+              <a href="http://dooh.cleanhouse.ge/dooh_ch_sales_031116.pdf" target="_blank" class="download-btn">
+                <button class="btn center-block">
+                  Download
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -406,7 +417,7 @@
               <div class="icon-img">
                 <img src="imgs/icons/regions.svg" class="img-responsive center-block" width="30px" alt="">
               </div>
-              <h1>რეგიონი</h1>
+              <h1>Regions</h1>
               <p class="regions">
                 <span class="counter">13</span>
                 <span class="plus">+</span>
@@ -416,9 +427,9 @@
               <div class="icon-img">
                 <img src="imgs/icons/screens.svg" class="img-responsive center-block" width="30px" alt="">
               </div>
-              <h1>ეკრანი</h1>
+              <h1>Screens</h1>
               <p class="screens">
-                <span class="counter">70</span>
+                <span class="counter">60</span>
                 <span class="plus">+</span>
                 <span class="counter">25</span>
               </p>
@@ -427,7 +438,7 @@
               <div class="icon-img">
                 <img src="imgs/icons/sale.svg" class="img-responsive center-block" width="30px" alt="">
               </div>
-              <h1>გაყიდვების ზრდა</h1>
+              <h1>Increased Sales</h1>
               <p class="visitors">
                 <span class="counter">25</span>
                 <span>%</span>
@@ -467,7 +478,7 @@
             <div class="row mt40">
               <div class="col-sm-12">
                 <h2 class="text-center title">
-                  კონტაქტი
+                  Contact Us
                 </h2>
               </div>
             </div>
@@ -480,20 +491,23 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="social">
-                          <a href="">
+                          <a href="https://www.facebook.com/suftasakhli/?fref=ts" target="_blank">
                             <i class="fa fa-facebook"></i>
                           </a>
-                          <a href="">
-                            <i class="fa fa-linkedin"></i>
+                          <a href="https://twitter.com/suftasaxli" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                          <a href="http://cleanhouse.ge" target="_blank">
+                            <i class="fa fa-globe"></i>
                           </a>
                         </div>
                       </div>
                       <div class="col-sm-10 subscribe">
-                        <h4>გამოიწერე სიახლეები</h4>
+                        <h4>Subscribe</h4>
                         <form class="form" action="index.php" method="post">
                           <div class="form-group">
                             <div class="input-group">
-                              <input type="text" class="form-control subscribe-input"  placeholder="ელ. ფოსტა">
+                              <input type="text" class="form-control subscribe-input"  placeholder="Your Email">
                               <div type="submit" class="input-group-addon send-button btn"><button type="submit" name="button" class="send-button"><i class="fa fa-paper-plane"></i></button></div>
                             </div>
                           </div>
@@ -504,7 +518,7 @@
                   <div class="col-sm-6">
                     <div class="row">
                       <div class="col-sm-12">
-                        <h4 class="contact-header">საკონტაქტო ინფორმაცია</h4>
+                        <h4 class="contact-header">Contact information</h4>
                       </div>
                       <div class="col-sm-12 text-right addresses">
                         <p class="englishFont">
@@ -514,7 +528,7 @@
                           info@clean-house.ge&nbsp;&nbsp;<i class="fa fa-envelope"></i>
                         </p>
                         <p>
-                          ქსნის ქ. #36, თბილისი, საქართველო <i class="fa fa-map-marker"></i>
+                          #36, Ksani str. Tbilisi, Georgia <i class="fa fa-map-marker"></i>
                         </p>
                       </div>
                     </div>
@@ -522,7 +536,7 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-12 text-center">
-                    <p class="copyright">© 2016 Clean House. ყველა უფლება დაცულია.</p>
+                    <p class="copyright">© 2016 Clean House. All right received.</p>
                   </div>
                 </div>
               </div>
@@ -535,35 +549,11 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/bootstrap.transition.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="js/counter.min.js"></script>
 <script src="js/bootstrap.collapse.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/counter.min.js"></script>
 <script src="js/functions.js"></script>
-<script>
-  $('.counter').counterUp({
-    delay: 10,
-    time: 4000
-  });
-</script>
-<script>
-  wow = new WOW(
-    {
-      animateClass: 'animated',
-      offset:       100,
-      callback:     function(box) {
-        //console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-      }
-    }
-  );
-  wow.init();
-  document.getElementById('moar').onclick = function() {
-    var section = document.createElement('section');
-    section.className = 'section--purple wow fadeInDown';
-    this.parentNode.insertBefore(section, this);
-  };
-</script>
 </body>
 </html>

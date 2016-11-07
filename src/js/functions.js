@@ -1,12 +1,9 @@
 $(document).ready(function() {
-
     /*preloader*/
     $(window).load(function() {
-      setTimeout(function() {
-        $("html,body").animate({
-          scrollTop: 0
-        }, 2e3), $("#status").fadeOut(), $("#preloader").delay(350).fadeOut("slow")
-      }, 2e3)
+        setTimeout(function() {
+            $("#status").fadeOut(), $("#preloader").delay(350).fadeOut("slow")
+        }, 2e3)
     });
 
     // sticked menu
@@ -15,117 +12,68 @@ $(document).ready(function() {
     });
 
     $('.more').on('click', function() {
-      var $arrow = $(this).find('.arrows');
-      $('.arrows').not($arrow).stop().addClass("fa-angle-down");
-      $arrow.stop().toggleClass("fa-angle-down");
+        var $arrow = $(this).find('.arrows');
+        $('.arrows').not($arrow).stop().addClass("fa-angle-down");
+        $arrow.stop().toggleClass("fa-angle-down");
     });
 
-    $('#accordion').on('shown.bs.collapse', function (e) {
+    $('#accordion').on('shown.bs.collapse', function(e) {
         var offset = $(this).find('.collapse.in');
-        if(offset) {
+        if (offset) {
             $('html,body').animate({
-                scrollTop: $(offset).offset().top -290
+                scrollTop: $(offset).offset().top - 290
             }, 500);
         }
     });
 
-    // dropdown menu
-    $('ul.nav li.dropdown').hover(function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
-    }, function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
-    });
-    // owl carousel
-    $("#owl-demo").owlCarousel({
-        autoPlay: 7000,
-        items: 4,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [979, 3]
+    // counter
+    $('.counter').counterUp({
+        delay: 10,
+        time: 4000
     });
 
-    // owl carousel
-    $("#learning-items").owlCarousel({
-        autoPlay: 4000,
-        items: 1,
-        singleItem: true,
-        transitionStyle: "fade",
-        itemsDesktop: [1199, 1],
-        itemsDesktopSmall: [979, 1]
+    // wow animated css
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
     });
-
-    // active buttons
-    $('.feature-btns button').on('click', function() {
-        $('.feature-btns button').removeClass('active-btn');
-        $(this).addClass('active-btn');
-    });
+    wow.init();
 
 
-    $('.screens').on('click', function() {
-        $('.products').addClass('hide-feature');
-        $('#screens').removeClass("hide-feature");
-    });
+    // body scrolling
+    $(document).on("scroll", onScroll);
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        $(document).off("scroll");
 
-    $('.players').on('click', function() {
-        $('.products').addClass('hide-feature');
-        $('#players').removeClass("hide-feature");
-    });
+        $('a').each(function() {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
 
-    $('.enclosures').on('click', function() {
-        $('.products').addClass('hide-feature');
-        $('#enclosures').removeClass('hide-feature');
-    });
-
-    $('.led').on('click', function() {
-        $('.products').addClass('hide-feature');
-        $('#led').removeClass('hide-feature');
-    });
-    $('.totem').on('click', function() {
-        $('.products').addClass('hide-feature');
-        $('#totem').removeClass('hide-feature');
-    });
-
-
-    // scrolling image
-    var step = 25;
-    var scrolling = false;
-    // Wire up events for the 'scrollUp' link:
-    $("#scrollUp").bind("click", function(event) {
-        event.preventDefault();
-        // Animates the scrollTop property by the specified
-        // step.
-        $(".scrolling-img").animate({
-            scrollTop: "-=" + step + "px"
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            scrollTop: $target.offset().top + 2
+        }, 500, 'swing', function() {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
         });
-    }).bind("mouseover", function(event) {
-        scrolling = true;
-        scrollContent("up");
-    }).bind("mouseout", function(event) {
-        scrolling = false;
     });
-
-    $("#scrollDown").bind("click", function(event) {
-        event.preventDefault();
-        $(".scrolling-img").animate({
-            scrollTop: "+=" + step + "px"
-        });
-    }).bind("mouseover", function(event) {
-        scrolling = true;
-        scrollContent("down");
-    }).bind("mouseout", function(event) {
-        scrolling = false;
-    });
-
-    function scrollContent(direction) {
-        var amount = (direction === "up" ? "-=1px" : "+=1px");
-        $(".scrolling-img").animate({
-            scrollTop: amount
-        }, 1, function() {
-            if (scrolling) {
-                scrollContent(direction);
-            }
-        });
-    }
-
-
 
 }); //end ready
+
+// body scrolling
+function onScroll(event) {
+    var scrollPosition = $(document).scrollTop();
+    $('nav a').each(function() {
+        var currentLink = $(this);
+        var refElement = $(currentLink.attr("href"));
+        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+            $('nav ul li a').removeClass("active");
+            currentLink.addClass("active");
+        } else {
+            currentLink.removeClass("active");
+        }
+    });
+}

@@ -59,9 +59,9 @@
         position: absolute;
         z-index: 100;
         color: $white;
-        margin-top: -200px;
-        @include respond-to(mediumScreen) {
-          margin-top: -50px;
+        top: 350px;
+        @media screen and (max-width: 1400px) {
+          top: 150px;
         };
         h1 {
           font-size: 40px;
@@ -86,6 +86,14 @@
       background: url('../imgs/car1.svg') no-repeat;
       background-position: bottom;
       background-size: contain;
+    }
+    .ad {
+      position: absolute;
+      @include animation(adMoving 2s ease-in-out infinite);
+      transition: all .2s ease-in-out;
+      background: url('../imgs/ad.svg') no-repeat;
+      background-position: bottom;
+      background-size: cover;
     }
 
     .bag {
@@ -126,6 +134,20 @@
 
     100% {
       @include transform(translateX(-100%));
+    }
+  }
+
+  @include keyframes(adMoving) {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
     }
   }
 
@@ -281,6 +303,38 @@
     }
 
     #offers {
+      .proactive {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        @include respond-to(mediumScreen) {
+          flex-direction: column;
+        };
+      }
+      .integration {
+        a {
+          text-decoration: none;
+          color: $bgDarken;
+          transition: color .1s ease-in-out;
+          &:hover {
+            color: $iconColor;
+          }
+        }
+      }
+      .globe-icons {
+        display: inline-block;
+
+       }
+      .download-btn {
+        text-decoration: none;
+        color: $white;
+        button {
+          background: $green;
+          border-radius: 2px;
+          border: none;
+        }
+      }
       .icon {
         text-align: right;
         @include respond-to(smallScreen) {
