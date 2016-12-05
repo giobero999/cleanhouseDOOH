@@ -56,19 +56,21 @@
       background-size: cover;
       transition: all .1s ease-in-out;
       .main-text {
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include position(absolute, 350px 0 null);
         z-index: 100;
         color: $white;
-        top: 350px;
         @media screen and (max-width: 1400px) {
-          top: 150px;
+          top: 250px;
         };
         h1 {
-          font-size: 40px;
+          font-size: 50px;
           max-width: 100%;
           margin: 0 auto;
           text-align: center;
-          text-shadow: 1px 1px 1px #2d2d2d;
+          text-shadow: 2px 2px 1px #252525;
         }
         h2 {
           max-width: 90%;
@@ -81,6 +83,7 @@
 
     .car1 {
       position: absolute;
+      z-index: 111;
       @include animation(carMoving 15s linear infinite);
       transition: all .5s ease-in-out;
       background: url('../imgs/car1.svg') no-repeat;
@@ -89,6 +92,7 @@
     }
     .ad {
       position: absolute;
+      z-index: 111;
       @include animation(adMoving 2s ease-in-out infinite);
       transition: all .2s ease-in-out;
       background: url('../imgs/ad.svg') no-repeat;
@@ -107,6 +111,7 @@
     }
 
     .car2 {
+      z-index: 111;
       @extend .car1;
       @include animation(carMoving 20s linear infinite);
       background-image: url('../imgs/car2.svg');
@@ -186,9 +191,12 @@
                 width: 100%;
               }
               h4 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 text-transform: uppercase;
                 font-size: 24px;
-                @include position(absolute, null 0 null);
+                @include position(absolute, 0);
                 text-shadow: 0px 0px 10px #2d2d2d;
                 text-align: center;
                 margin-top: 0;
@@ -230,7 +238,7 @@
     #single-project {
       background: $white;
       color: $white;
-      margin-top: -83px;
+      margin-top: -80px;
       .pro {
         background: $bgDarken;
         .row {
